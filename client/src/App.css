@@ -76,3 +76,64 @@ nav li:hover{
   transition: 0.3s ease-in-out;
 }
 
+
+/* Home */
+
+#hero{
+  background: var(--dark-color);
+  padding: 4rem 0;
+  border-bottom: 4px solid var(--lighting-color);
+}
+
+#hero .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-content{
+  display: grid;
+  place-items: center;
+}
+
+#hero h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hi_text{
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.name-text{
+  font-size: 5rem;
+}
+
+#hero h2{
+  font-size: 4rem;
+  font-weight: bold;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(40, end), blink-cart 0.75s step-end infinite;
+}
+
+@keyframes typing{
+  from{
+    width: 0;
+  }to{
+    width: 100%;
+  }
+}
+
+@keyframes blink-cart{
+  from, to{
+    border-color: transparent;
+  }
+  50%{
+    border-color: orange;
+  }
+}
