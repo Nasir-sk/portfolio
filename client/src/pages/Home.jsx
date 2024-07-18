@@ -9,14 +9,14 @@ export default function Home() {
       <section id="hero">
           <div className="container">
             <div className="hero_image animate__animated animate__bounceInLeft">
-                <img src={IMAGES.image1} alt="hero image"/>
+                <img src={IMAGES.image} alt="hero image"/>
             </div>
             <div className="hero_content">
             <h1>
                 <span className="hi_text">Hi</span>, I am 
                 <span className="name_text">Nasir Shaikh</span>
             </h1>    
-            <h2>Frontend Developer</h2>
+            <h2>MERN Stack Developer</h2>
           </div>
           </div>
         </section>
