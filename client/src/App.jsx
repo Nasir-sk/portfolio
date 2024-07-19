@@ -1,28 +1,30 @@
 import './App.css'
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
+import Tribute from './routes/Tribute'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 function App() {
- 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element:<Home/>,
+    },
+    {
+      path: "/tribute",
+      element:<Tribute/>,
+    }
+  ])
+  
 
   return (
-    <>
-     <BrowserRouter>
-      <Header/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/projects' element={<Projects/>}/>
-      </Routes>
-      <Projects/>
-      <Contact/>
-      <Footer/>
-     </BrowserRouter>
-
-    
-     </>
+      <div>
+        <Header/>
+        <RouterProvider router={router}/> 
+        <Footer/>
+      </div>
   )
 }
 

@@ -26,7 +26,7 @@ export default function Contact() {
                     </div>
                     <div className="contact_way">
                         <i className='fab fa-mobile'></i>
-                        <h3>9148709967</h3>
+                        <h3>Mobile</h3>
                     </div>
                 </div>
             </div>

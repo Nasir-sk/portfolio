@@ -1,4 +1,7 @@
 import React from "react";
+import Home from "../pages/Home";
+import Projects from "../pages/Projects";
+import Contact from "../pages/Contact";
 export default function Header() {
   return (
     <div>
@@ -18,6 +21,9 @@ export default function Header() {
           </ul>
         </nav>
       </div>
+      <Home/>
+      <Projects/>
+      <Contact/>
     </div>
   );
 }
